@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shopping Website</title>
+  <link rel="icon" href="saranya logo.jpg" type="image/x-icon">
+  
+  <style>
+     
+            @import url('https://fonts.googleapis.com/css2?family=nunito:wght@200;300;400;600;700& display=swap');
+        :root{
+            --green:#27ae60;
+            --black:#2c2c54;
+        }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f4f4f4;
+    }
+
+    /* Header */
+    header {
+      background-color:olivedrab;
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo {
+      width: 50px;
+      height: 80px;
+      margin-right: 20px;
+    }
+
+    .site-name {
+      font-size: 60px;
+      font-weight: bold;
+      
+      
+    }
+
+    .header-buttons button {
+      margin-left: 10px;
+      padding: 10px 16px;
+      background-color:(white);
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .header-buttons button:hover {
+      background-color:rgb(200, 212, 91);
+    }
+
+    /* Main section */
+    .card-section {
+      display: grid;
+      margin-top: 40px;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 60px;
+    }
+
+    .card {
+      background-color: bisque;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px white;
+      overflow: hidden;
+      transition: 0.3s;
+      transition: background-color 0.4s ease 0.2s, transform 0.4s ease 0.2s;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+      background-color: pink;
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 15px;
+      transition: background-color 0.4s ease 0.2s, transform 0.4s ease 0.2s;
+    }
+    .card-content:hover{
+        background-color: pink;
+        transform: scale(1.05);
+    }
+
+    .card-title {
+      font-size: 20px;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    .card-content p {
+      font-size: 14px;
+      color:rgb(95, 151, 95);
+      margin-bottom: 10px;
+    }
+
+    .card-content a {
+      text-decoration: none;
+      color:black;
+      font-weight: bold;
+    }
+
+    .card-content a:hover {
+      text-decoration: underline;
+    }footer {
+      background-color: rgb(95, 151, 95);
+      color: black;
+      text-align: center;
+      padding: 15px;
+      margin-top: 80px;
+    }
+   .log1{
+    background-color: white;
+   }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    
+     <div class="header-1">
+            <a href="#" class="logo"><i class="fas fa-shopping-basket"> groco</i></a>
+            <form action="" class="search-box-container">
+                <input type="search"id="search-box" placeholder="search here...">
+                <label for="search-box" class="fas fa-search"></label>
+            </form>
+        </div>
+        <div class="header-2">
+            <nav class="navbar">
+                <a href="#home">home</a>
+                <a href="#home">category</a>
+                <a href="#home">product</a> 
+                <a href="#home">deal</a>
+                <a href="#home">contact</a>
+            </nav>
+        </div>
+        <div class="icons">
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-user-circle"></a>
+        </div>
+
+        
+        <section class="home" id="home">
+            <div class="image">
+                <img src="C:\html 2\download (2).jpg"alt="">
+            </div>
+            <div class="contact">
+                <span>fresh and organic</span>
+                <h3>your daily need products</h3>
+                <a href="#" class="btn">get started</a>
+            </div>
+  </header>
+
+  <!-- Section with Cards -->
+  <section class="card-section">
+   
+    <div class="card">
+      <img src="C:\html 2\download (3).jpg"alt="vegetabel">
+      <div class="card-content">
+        <div class="card-title">vegetabel</div>
+        <p>45%</p>
+         <a href="#" class="btn">get started</a>
+      </div>
+    </div>
+
+   
+    <div class="card">
+      <img src="C:\html 2\saran.jpg"alt=" dry fruits ">
+      <div class="card-content">
+        <div class="card-title">dry fruits</div>
+        <p>50%</p>
+        <a href="C:\html 2.html">get started</a>
+      </div>
+    </div>
+
+ 
+    <div class="card">
+      <img src="C:\html 2\image.jpg"alt="daily product">
+      <div class="card-content">
+        <div class="card-title">daily product</div>
+        <p>20%</p>
+        <a href="C:\html 2.html">get started</a>
+      </div>
+    </div>
+
+    
+    <div class="card">
+      <img src="C:\html 2\images.jpg" alt="nuts">
+      <div class="card-content">
+        <div class="card-title">nuts</div>
+        <p>70%</p>
+        <a href="C:\html 2.html">get started</a>
+      </div>
+    </div>
+    
+  </section>
+  
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 saranya <small>Ease</small> . All rights reserved.
+  </footer>
+
+</body>
+</html>

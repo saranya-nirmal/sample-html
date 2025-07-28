@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GROCERY Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!---- header section-->
+    <header>
+        <div class="header-1">
+            <a href="#" class="logo"><i class="fas fa-shopping-basket"> groco</i></a>
+            <form action="" class="search-box-container">
+                <input type="search"id="search-box" placeholder="search here...">
+                <label for="search-box" class="fas fa-search"></label>
+            </form>
+        </div>
+        <div class="header-2">
+            <nav class="navbar">
+                <a href="#home">home</a>
+                <a href="#home">category</a>
+                <a href="#home">product</a> 
+                <a href="#home">deal</a>
+                <a href="#home">contact</a>
+            </nav>
+        </div>
+        <div class="icons">
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-user-circle"></a>
+        </div>
+
+        </div>
+        <section class="home" id="home">
+            <div class="image">
+                <img src="C:\html 2\images.jpg">
+            </div>
+            <div class="contact">
+                <span>fresh and organic</span>
+                <h3>your daily need products</h3>
+                <a href="#" class="btn">get started</a>
+            </div>
+
+        <section class="card-container">
+        <div class="banner">
+            <img sre="C:\html 2\download (1).jpg">
+            </div>
+            <div class="content">
+                <h3>limited offer</h3>
+                <span>upto 45% off</span>
+                <a herf="#" class="btn">check out</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <img sre="C:\html 2\download (1).jpg"alt=" vegetabel">
+        <div class="card-content"></div>
+            <div class="content">vegetabel</div>
+                <h3>limited offer</h3>
+                <p>upto 50% off</p>
+                
+                <a herf="#" class="btn">check out</a>
+            
+        </div> 
+        
+        </section>
+        </section>
+        
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=nunito:wght@200;300;400;600;700& display=swap');
+        :root{
+            --green:#27ae60;
+            --black:#2c2c54;
+        }
+
+*{
+            font-family: 'nunito',sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            outline: none;
+            border: none;
+            text-decoration: none;
+            text-transform: capitalize;
+            transition: all.2s linear;
+        }
+        ::selection{
+            background:var(--green);
+            color: #fff;
+        }
+        html{
+            font-size: 62.5%;
+            overflow-x:hidden ;
+            scroll-padding-top: 6.5rem;
+
+        }
+        section{
+            padding: 2rem 9%;
+        }
+        .btn{
+            display: inline-block;
+            margin-top: 1rem;
+            background:var(--green) ;
+            color: #fff;
+            padding: 8rem 3rem ;
+            font-size: 1.7rem;
+            text-align: center;
+            cursor: pointer;
+        }
+        .btn.hover{
+            background: var(--black);
+        }
+
+        .header{
+            background: #eee;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 2rem 9%;
+        }
+        .logo{
+            color: var(--black);
+            font-weight: bolder;
+            font-size: 3rem;
+        }
+        .logo i{
+            padding-right: 5rem;
+            color: var(--green);
+        }
+        .header-1 .search-box-container{
+            display: flex;
+            height: 5rem;
+        }
+         .header-1 .search-box-container #search-box{
+            height: 100%;
+            width: 100%;
+            padding: 1rem;
+            font-size: 2rem;
+            color: #333;
+            border: 1rem solid rgba(0,0,0,.3);
+            text-transform: none;
+         }
+          .header-1 .search-box-container label{
+            height: 100%;
+            width: 8rem;
+    
+            font-size: 2.5rem;
+            line-height: 5rem;
+            color: #fff;
+            border-color: var(--green);
+            text-align: center;
+            cursor: pointer;
+
+          }
+           .header-1 .search-box-container label:hover{
+            background: var(--black);
+           }
+          .header2{
+            background: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 2rem 9%;
+            box-shadow: 0.5rem rgba(0,0,0,.1);
+            position: relative;
+}
+.header-2 .navbar a{
+    padding: .5rem 1.5rem;
+    font-size: 2rem;
+    border-radius: .5rem;
+    color: var(--black);
+}
+.header-2 .navbar a:hover{
+    background: var(--green);
+    color: #fff;
+}
+.header-2 .icons a{
+    font-size: 2.5rem;
+    color: var(--black);
+    padding-left: 1rem;
+
+}
+.header-2 .icons a:hover{
+    color: var(--green);
+
+}
+@media(max-width:1200px){
+html
+{
+    font-size: 55%
+}
+}
+@media(max-width:991px){
+.header-1, .header-2{
+padding: 2rem;
+}
+selection{
+    padding: 2rem;
+}
+
+}
+@media(max-width:991px){
+    .header-1,.header-2 {
+        padding: 2rem;
+    }
+}
+@media(max-width:768px){
+    #menu-bar{
+        display: initial;
+    }
+    .header-2.navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--black);
+    
+    padding: 1.5rem 0;
+}
+.home.content{
+    text-align: center;
+}
+.home.content h3{
+    font-size: 4rem;
+}
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.home .image{
+    flex: 1 1 40rem;
+    padding: 5rem;
+}
+.home .image img{
+    width: 100%;
+
+}
+.home.content{
+    flex: 1 1 40rem;
+}
+.home.content span{
+    font-size: 3rem;
+    color: #666;
+}
+.home.content h3{
+    font-size: 5rem;
+    color: var(--black);
+}
+.card-container{
+     display: flex;
+    
+gap: 1.5rem;
+    flex-wrap: wrap;
+}
+.card-container .banner{
+    flex: 1 1 40rem;
+    height: 25rem;overflow: hidden;
+    position: relative;
+}
+card-container .banner img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+        </style>
+         
+    </header>
+
+        
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
